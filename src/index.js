@@ -6,9 +6,12 @@ import reducer from './reducer';
 import {addComment, removeComment, editComment, thumbUpComment, thumbDownComment} from './actions';
 import './index.css';
 import App from './App';
+import DevTools from './DevTools'
 //import registerServiceWorker from './registerServiceWorker';
 
-const store = createStore(reducer);
+const store = createStore(reducer,
+  DevTools.instrument()
+);
 
 ReactDOM.render(
   <Provider store={store}>
