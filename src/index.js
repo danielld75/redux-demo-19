@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducer from './reducer';
-import {addComment, removeComment, editComment, thumbUpComment, thumbDownComment} from './actions';
+import {addComment} from './actions';
 import './index.css';
 import App from './App';
 import DevTools from './DevTools'
